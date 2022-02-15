@@ -3,6 +3,9 @@
     padding: 0;
 }
 body{
+    background-color: #282b30;
+}
+.body{
     background-image: url("../img/lobby.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -401,4 +404,135 @@ body{
   }
   .tac:hover {
     text-decoration: underline;
+  }
+
+/*Games Page*/
+.games-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+  .evening-card{
+    border-radius: 5px;
+    width: 530px;
+    background-color: rgb(59, 59, 59);
+    transition: all .3s;
+}
+.evening-card-btn{
+    display: none;
+}
+.evening-card-btn button{
+    border: none;
+    background-color: green;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.evening-card a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    text-decoration: none;
+}
+.evening-card:hover{
+    background-color: rgb(75, 75, 75);
+}
+.evening-card h1{
+    color:  white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+.evening-card img{
+    width: 80px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    height: 80px;
+}
+.game-info{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game-image{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+@media (max-width: 1920px) {
+    .game-image {
+        background-size: 1920px;
+    }
+  }
+.game-image2{
+    background-image: url("../img/duels.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+@media (max-width: 1920px) {
+    .game-image2 {
+        background-size: 1920px;
+    }
+  }
+.game-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.game-title p{
+    color: rgb(197, 168, 0);
+}
+.game-desc{
+    width: 50%;
+    margin-left: 30px;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.btn-1{
+    width: 250px;
+    height: 70px;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid #b9ab93;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+  }
+  .btn-1:hover{
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn-1::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #b9ab93;
+  }
+  .btn-1:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
   }
