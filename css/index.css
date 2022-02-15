@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/lobby.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+@media (max-width: 1920px) {
+    body {
+        background-size: 1920px;
+    }
+  }
+.navbar{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-left{
+    display: flex;
+    margin-left: 50px;
+}
+.nav-left img{
+    width: 100px;
+    border-radius: 10px;
+}
+.nav-center{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Panton', sans-serif;
+}
+.nav-center a{
+    text-decoration: none;
+    color: white;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    gap: 25px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 50px;
+}
+.nav-discord{
+    background-color: #7289da;
+    padding: 11px 16px 11px 16px;
+    border-radius: 35px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px 5px #7289da;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-discord:hover{
+    background-color: #5e73be;
+    box-shadow: 0px 0px 10px 5px #5e73be;
+}
+.nav-shop{
+    background-color: #f59f06;
+    padding: 11px 18px 11px 18px;
+    border-radius: 35px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px 5px #f59f06;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-shop:hover{
+    box-shadow: 0px 0px 10px 5px #da8a00;
+    background-color: #da8a00;
+}
