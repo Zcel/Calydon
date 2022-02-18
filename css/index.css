@@ -187,7 +187,9 @@ body{
 .footer-container {
     background-color: #080808;
     padding: 2rem 0 2rem 0;
-    bottom: 0;
+    position:absolute;
+    bottom:0;
+    width: 100%;
   }
   .footer {
     width: 80%;
@@ -439,6 +441,10 @@ body{
   align-items: center;
   gap: 50px;
   border-radius: 25px;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: .7;
+	animation-timing-function: ease-in;
+	animation-duration: .7s;
 }
 .game-image2{
   display: flex;
@@ -451,6 +457,18 @@ body{
   align-items: center;
   gap: 50px;
   border-radius: 25px;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: .7;
+	animation-timing-function: ease-in;
+	animation-duration: .7s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .game-title{
     display: flex;
@@ -502,7 +520,7 @@ body{
   }
 
   .game-1{
-    width: 450px;
+    min-width: 450px;
     height: 450px;
     display: flex;
     object-fit: cover;
